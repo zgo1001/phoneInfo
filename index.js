@@ -1,3 +1,10 @@
+var ref = cordova.InAppBrowser.open('http://apache.org', '_blank', 'location=yes');
+//The first parameter is the site you want to go to.
+//The second parameter can be one of 3 options: _self, _blank, _system
+//_self uses Cordova Webview if URL is "good" (whitelist), otherwise uses InAppBroswer.
+//_blank uses InAppBrowser and _system uses's phone's browser
+//The third parameter is a string of options - different options for Android and IOS. Both support the location option.
+
 var app = {
     // Application Constructor
     initialize: function() {
