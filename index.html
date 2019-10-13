@@ -12,6 +12,28 @@
 
     <link rel="stylesheet" type="text/css" href="index.css" />
     <title>Hello World</title>
+	<style>
+		table { 
+    table-layout:fixed;
+}
+		
+		td { 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+}
+		
+		@media only screen and (max-width: 480px) {
+    /* horizontal scrollbar for tables if mobile screen */
+    .tablemobile {
+        overflow-x: auto;
+        display: block;
+    }
+}
+		
+		 body { margin:0;padding:0; }
+		
+	</style>
 </head>
 
 <body>
@@ -26,7 +48,7 @@
     </div>
 -->
     
-    <table style="width:200px; overflow-x: auto;" border=1px>
+    <table style="width:100%; overflow-x: auto;" border=1px>
 		
 		
 <!-- FIRST BOOK-->		
